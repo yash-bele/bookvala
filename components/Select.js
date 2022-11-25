@@ -12,7 +12,7 @@ const Select = ({
   return (
     <main
       className={`flex items-center justify-between w-[350px] sm:w-96 border rounded pl-2
-      ${show ? 'border-blue-500' : 'border-slate-300 hover:border-slate-400'}`}
+      ${show ? 'border-blue-600' : 'border-slate-400 hover:border-slate-500'}`}
     >
       <section className='flex flex-wrap py-1'>
         {container.map((i) => {
@@ -72,20 +72,20 @@ const Select = ({
               className={`text-lg
             ${
               show
-                ? 'text-slate-500'
-                : 'text-slate-300 group-hover:text-slate-400'
+                ? 'text-slate-600'
+                : 'text-slate-400 group-hover:text-slate-500'
             }`}
             />
           </div>
         )}
-        <div className='w-px h-5 ml-0.5 bg-slate-300'></div>
+        <div className='w-px h-5 ml-0.5 bg-slate-400'></div>
         <div className='p-2 group cursor-pointer' onClick={handleShow}>
           <HiOutlineChevronDown
-            className={`text-lg text-slate-300
+            className={`text-lg
             ${
               show
-                ? 'text-slate-500'
-                : 'text-slate-300 group-hover:text-slate-400'
+                ? 'text-slate-600'
+                : 'text-slate-400 group-hover:text-slate-500'
             }`}
           />
         </div>
